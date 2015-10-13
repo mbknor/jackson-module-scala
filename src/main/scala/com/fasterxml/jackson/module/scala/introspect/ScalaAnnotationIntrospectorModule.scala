@@ -97,6 +97,6 @@ object ScalaAnnotationIntrospector extends NopAnnotationIntrospector
 }
 
 trait ScalaAnnotationIntrospectorModule extends JacksonModule {
-  this += { _.appendAnnotationIntrospector(new ParanamerAnnotationIntrospector()) }
+  //this += { _.appendAnnotationIntrospector(new ParanamerAnnotationIntrospector()) }
   this += { _.appendAnnotationIntrospector(ScalaAnnotationIntrospector) }
 }
